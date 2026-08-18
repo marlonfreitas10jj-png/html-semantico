@@ -1,0 +1,209 @@
+/* =================================
+   CONFIGURAÇÃO
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    color: #1e293b;
+
+    background-color: #f1f5f9;
+}
+
+
+/* =================================
+   CABEÇALHO
+================================= */
+
+header {
+
+    width: 100%;
+
+    min-height: 4.5rem;
+
+    padding: 0 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #0f172a;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.logo {
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+}
+
+
+/* =================================
+   MENU NORMAL
+================================= */
+
+nav {
+
+    display: flex;
+
+    gap: 1.5rem;
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+
+    color: #60a5fa;
+}
+
+
+/* Esconde o checkbox */
+
+#menu {
+
+    display: none;
+}
+
+
+/* Esconde o botão hamburguer
+   em telas grandes */
+
+.hamburguer {
+
+    display: none;
+
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+
+/* =================================
+   CONTEÚDO
+================================= */
+
+main {
+
+    width: 90%;
+
+    max-width: 70rem;
+
+    margin: auto;
+}
+
+section {
+
+    min-height: 30rem;
+
+    padding: 5rem 0;
+
+    text-align: center;
+}
+
+section h1 {
+
+    margin-bottom: 1rem;
+
+    color: #2563eb;
+
+    font-size: 1.5rem;
+}
+
+section h2 {
+
+    margin-bottom: 1rem;
+
+    font-size: 2.5rem;
+}
+
+section p {
+
+    color: #64748b;
+
+    font-size: 1.1rem;
+}
+
+
+/* =================================
+   MENU HAMBURGUER
+   TELAS MENORES
+================================= */
+
+@media (max-width: 48rem) {
+
+    /* Mostra o botão hamburguer */
+
+    .hamburguer {
+
+        display: block;
+    }
+
+
+    /* Esconde o menu */
+
+    nav {
+
+        display: none;
+
+        position: absolute;
+
+        top: 4.5rem;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 1.5rem;
+
+        background-color: #0f172a;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 1.5rem;
+    }
+
+
+    /* Quando clicar no ☰,
+       o menu aparece */
+
+    #menu:checked ~ nav {
+
+        display: flex;
+    }
+
+}

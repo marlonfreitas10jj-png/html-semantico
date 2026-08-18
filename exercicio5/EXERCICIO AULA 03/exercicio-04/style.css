@@ -1,0 +1,119 @@
+/* =========================
+   4 - META VIEWPORT
+========================= */
+
+#atividade4 {
+
+    width: 90%;
+
+    max-width: 70rem;
+
+    margin: 0 auto;
+
+    padding: 5rem 0;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+#atividade4 .numero {
+
+    width: 4rem;
+    height: 4rem;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 1.8rem;
+
+    font-weight: bold;
+}
+
+#atividade4 h1 {
+
+    margin: 1rem 0;
+
+    color: white;
+
+    font-size: 2.5rem;
+}
+
+#atividade4 > p {
+
+    width: 90%;
+
+    max-width: 50rem;
+
+    margin: 1rem auto;
+
+    color: #cbd5e1;
+
+    font-size: 1.1rem;
+}
+
+
+/* Código da meta viewport */
+
+.codigo {
+
+    width: 90%;
+
+    max-width: 55rem;
+
+    margin: 2rem auto;
+
+    padding: 1.5rem;
+
+    background-color: #020617;
+
+    color: #60a5fa;
+
+    border-radius: 0.8rem;
+
+    overflow-x: auto;
+}
+
+
+/* Área de teste */
+
+.teste {
+
+    width: 90%;
+
+    max-width: 45rem;
+
+    margin: 2rem auto;
+
+    padding: 2rem;
+
+    background-color: #1e293b;
+
+    border-radius: 1rem;
+}
+
+.teste h2 {
+
+    margin-bottom: 1rem;
+
+    color: #60a5fa;
+}
+
+.teste p {
+
+    margin-bottom: 1rem;
+
+    color: #cbd5e1;
+}

@@ -1,0 +1,153 @@
+/* =========================
+   3 - UNIDADES RELATIVAS
+========================= */
+
+#atividade3 {
+    width: 90%;
+
+    max-width: 70rem;
+
+    margin: 0 auto;
+
+    padding: 5rem 0;
+
+    text-align: center;
+}
+
+
+/* Número da atividade */
+
+#atividade3 .numero {
+    width: 4rem;
+    height: 4rem;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    background-color: #2563eb;
+
+    border-radius: 50%;
+
+    font-size: 1.8rem;
+
+    font-weight: bold;
+}
+
+
+/* Título */
+
+#atividade3 h1 {
+
+    margin: 1rem 0;
+
+    color: #2563eb;
+
+    font-size: 2.5rem;
+}
+
+
+/* Texto */
+
+#atividade3 > p {
+
+    width: 90%;
+
+    margin: 0 auto 2rem;
+
+    color: #64748b;
+
+    font-size: 1.1rem;
+}
+
+
+/* Caixas */
+
+.unidades {
+
+    width: 90%;
+
+    margin: 2rem auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+
+/* Cada caixa */
+
+.caixa {
+
+    padding: 2rem;
+
+    background-color: white;
+
+    border-radius: 1rem;
+
+    box-shadow:
+        0 0.5rem 1rem
+        rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tamanho usando REM */
+
+.caixa h2 {
+
+    margin-bottom: 1rem;
+
+    color: #2563eb;
+
+    font-size: 2rem;
+}
+
+
+/* Tamanho usando EM */
+
+.caixa p {
+
+    font-size: 1em;
+
+    color: #64748b;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 48rem) {
+
+    .unidades {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 30rem) {
+
+    .unidades {
+
+        grid-template-columns: 1fr;
+
+        width: 90%;
+    }
+
+    #atividade3 h1 {
+
+        font-size: 2rem;
+    }
+}
